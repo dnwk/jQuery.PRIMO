@@ -374,8 +374,7 @@ var _getSessionData = function () {
             jQuery.ajax({
                 async: false,
                 type: 'get',
-                dataType: 'json',
-                url: jQuery.PRIMO.parameters.base_path + '/remote_session_data_helper.jsp',
+                dataType: 'json'
                 success: function (data, textStatus, jqXHR) {
                     sessionData = jQuery.extend(true, {}, data);
 
